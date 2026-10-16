@@ -1,5 +1,5 @@
 {
-    "round_id": 1,
+    "round_id": 2,
     "total_patronage_usd": 2.4,
     "allocations": {
         "ecosystem_sustenance_70_percent": {
@@ -8,7 +8,7 @@
         },
         "patron_reward_30_percent": {
             "amount_usd": 0.72,
-            "recipient_ticket": "TICKET-EP5-A3-0x86647e",
+            "recipient_ticket": "TICKET-EP5-A1-0x071b78",
             "recipient_wallet": "Community_Patron_Holder",
             "purpose": "Trao thưởng tri ân Thí chủ may mắn trúng giải nhân quả"
         }
