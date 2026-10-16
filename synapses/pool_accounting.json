@@ -1,0 +1,17 @@
+{
+    "round_id": 0,
+    "total_patronage_usd": 2.4,
+    "allocations": {
+        "ecosystem_sustenance_70_percent": {
+            "amount_usd": 1.68,
+            "purpose": "Nuôi sống máy chủ GitHub Actions, lưu trữ IPFS và điện toán cho 11 tầng bản thể Nexus"
+        },
+        "patron_reward_30_percent": {
+            "amount_usd": 0.72,
+            "recipient_ticket": "TICKET-EP5-A1-0x071b78",
+            "recipient_wallet": "Community_Patron_Holder",
+            "purpose": "Trao thưởng tri ân Thí chủ may mắn trúng giải nhân quả"
+        }
+    },
+    "status": "Allocated_And_Locked"
+}
