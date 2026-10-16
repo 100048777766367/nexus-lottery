@@ -1,0 +1,53 @@
+name: Nexus Lottery Scheduled Verifiable Draw
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0'  # Tự động quay số vào Chủ Nhật hàng tuần
+
+permissions:
+  contents: write
+
+jobs:
+  run-lottery-draw:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kéo mã nguồn Nexus Lottery
+        run: |
+          git clone --depth 1 https://github.com/${{ github.repository }}.git .
+
+      - name: Thiết lập Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Thực thi Kỳ Quay Số Nhân Quả
+        env:
+          REPO_OWNER: ${{ github.repository_owner }}
+        run: python engine.py
+
+      - name: Lưu vết tích Kết Quả Kỳ Quay vào Git
+        run: |
+          git config --global user.name "Nexus-Lottery-Oracle-Bot"
+          git config --global user.email "bot@nexus.lottery"
+          
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          
+          TARGET_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+          [ "$TARGET_BRANCH" = "HEAD" ] || [ -z "$TARGET_BRANCH" ] && TARGET_BRANCH="main"
+
+          git fetch origin "$TARGET_BRANCH"
+          git reset origin/"$TARGET_BRANCH"
+          
+          for d in certificates synapses; do
+            [ -d "$d" ] && git add -A "$d"
+          done
+          
+          if ! git diff --staged --quiet; then
+            git commit -m "🎟️ [Nexus-Lottery] Kết quả kỳ quay số minh bạch mới & Phân bổ 70/30 [skip ci]"
+            git push origin "$TARGET_BRANCH"
+          else
+            echo "Kỳ quay tĩnh lặng, chưa có biến thiên mới."
+          fi
