@@ -1,5 +1,5 @@
 {
-    "total_active": 5,
+    "total_active": 11,
     "tickets": [
         {
             "ticket_id": "TICKET-EP5-A1-0x071b78",
@@ -28,6 +28,42 @@
         {
             "ticket_id": "TICKET-EP5-A5-0x8fa7a1",
             "artifact_id": 5,
+            "tier_price_usd": 0.5,
+            "patron_wallet": "Community_Patron_Holder"
+        },
+        {
+            "ticket_id": "TICKET-EP6-A6-0xbd0960",
+            "artifact_id": 6,
+            "tier_price_usd": 1.0,
+            "patron_wallet": "Community_Patron_Holder"
+        },
+        {
+            "ticket_id": "TICKET-EP7-A7-0x470bee",
+            "artifact_id": 7,
+            "tier_price_usd": 0.2,
+            "patron_wallet": "Community_Patron_Holder"
+        },
+        {
+            "ticket_id": "TICKET-EP9-A8-0x67bb0e",
+            "artifact_id": 8,
+            "tier_price_usd": 0.5,
+            "patron_wallet": "Community_Patron_Holder"
+        },
+        {
+            "ticket_id": "TICKET-EP9-A9-0x451345",
+            "artifact_id": 9,
+            "tier_price_usd": 1.0,
+            "patron_wallet": "Community_Patron_Holder"
+        },
+        {
+            "ticket_id": "TICKET-EP11-A10-0x2f090f",
+            "artifact_id": 10,
+            "tier_price_usd": 0.2,
+            "patron_wallet": "Community_Patron_Holder"
+        },
+        {
+            "ticket_id": "TICKET-EP12-A11-0xb08a42",
+            "artifact_id": 11,
             "tier_price_usd": 0.5,
             "patron_wallet": "Community_Patron_Holder"
         }
