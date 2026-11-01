@@ -1,14 +1,14 @@
 {
-    "round_id": 6,
-    "total_patronage_usd": 21.1,
+    "round_id": 7,
+    "total_patronage_usd": 34.0,
     "allocations": {
         "ecosystem_sustenance_70_percent": {
-            "amount_usd": 14.77,
+            "amount_usd": 23.8,
             "purpose": "Nuôi sống máy chủ GitHub Actions, lưu trữ IPFS và điện toán cho 11 tầng bản thể Nexus"
         },
         "patron_reward_30_percent": {
-            "amount_usd": 6.33,
-            "recipient_ticket": "TICKET-EP39-A38-0x18af9d",
+            "amount_usd": 10.2,
+            "recipient_ticket": "TICKET-EP31-A30-0x0a55cd",
             "recipient_wallet": "Community_Patron_Holder",
             "purpose": "Trao thưởng tri ân Thí chủ may mắn trúng giải nhân quả"
         }

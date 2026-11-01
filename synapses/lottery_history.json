@@ -124,5 +124,23 @@
             "total_pool_tickets": 38,
             "mathematical_formula": "int(proof_hash, 16) % 38 == 37"
         }
+    },
+    {
+        "round_id": 7,
+        "timestamp": 1793502134,
+        "winning_ticket": "TICKET-EP31-A30-0x0a55cd",
+        "patron_wallet": "Community_Patron_Holder",
+        "proof_hash": "0x63857374fa7f62e57d76cda958e6bd607890597ce8b152b2cdd2226360423c3d",
+        "reward_usd": 10.2,
+        "ecosystem_funded_usd": 23.8,
+        "verification_data": {
+            "round_id": 7,
+            "timestamp": 1793502134,
+            "entropy_source": "DEFAULT_COSMIC_ENTROPY_SEED",
+            "proof_hash": "0x63857374fa7f62e57d76cda958e6bd607890597ce8b152b2cdd2226360423c3d",
+            "winning_index": 29,
+            "total_pool_tickets": 60,
+            "mathematical_formula": "int(proof_hash, 16) % 60 == 29"
+        }
     }
 ]
