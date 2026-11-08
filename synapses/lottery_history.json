@@ -142,5 +142,23 @@
             "total_pool_tickets": 60,
             "mathematical_formula": "int(proof_hash, 16) % 60 == 29"
         }
+    },
+    {
+        "round_id": 8,
+        "timestamp": 1794107433,
+        "winning_ticket": "TICKET-EP65-A62-0x593b74",
+        "patron_wallet": "Community_Patron_Holder",
+        "proof_hash": "0xc6f9857a05e051915b7d80a6c1023732810a2f4da3e6b0b520758008015fdc69",
+        "reward_usd": 12.81,
+        "ecosystem_funded_usd": 29.89,
+        "verification_data": {
+            "round_id": 8,
+            "timestamp": 1794107433,
+            "entropy_source": "DEFAULT_COSMIC_ENTROPY_SEED",
+            "proof_hash": "0xc6f9857a05e051915b7d80a6c1023732810a2f4da3e6b0b520758008015fdc69",
+            "winning_index": 61,
+            "total_pool_tickets": 76,
+            "mathematical_formula": "int(proof_hash, 16) % 76 == 61"
+        }
     }
 ]
